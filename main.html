@@ -5,34 +5,19 @@
 <head>
 	<link rel="stylesheet" href="styles.css">
 	 <script>
-      function showAlert() {
-        // Get the values entered in the form fields
+         function showAlert() {
         var FirstName = document.getElementById("FirstName").value;
         var LastName = document.getElementById("LastName").value;
         var Number = document.getElementById("Number").value;
         var ID = document.getElementById("ID").value;
-
-        // Debugging: Log the values to the console to ensure they're correctly retrieved
-        console.log("First Name:", FirstName);
-        console.log("Last Name:", LastName);
-        console.log("Phone Number:", Number);
-        console.log("Email ID:", ID);
-
-        // Ensure no value is undefined or empty before proceeding
-        if (!FirstName || !LastName || !Number || !ID) {
-          alert("Please fill in all fields.");
-          return; // Stop the function if any field is empty
-        }
-
-        // Show an alert with the values
         alert(
           "First Name: " +
             FirstName +
             " Last Name: " +
             LastName +
-            " Phone Number: " +
+            " PhoneNumber: " +
             Number +
-            " Email ID: " +
+            "Email ID: " +
             ID
         );
       }
@@ -41,32 +26,20 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	    <h2>Enter Your Information</h2>
-    <form onsubmit="event.preventDefault(); showAlert();">
-      <!-- First Name Field -->
+	<form onsubmit="event.preventDefault(); showAlert();">
       <label for="FirstName">First Name:</label>
-      <input type="text" id="FirstName" required />
+      <input type="text" name="text" id="FirstName" required />
       <br />
-
-      <!-- Last Name Field -->
       <label for="LastName">Last Name:</label>
-      <input type="text" id="LastName" required />
+      <input type="text" name="text" id="LastName" required />
       <br />
-
-      <!-- Phone Number Field -->
       <label for="Number">Phone Number:</label>
-      <input type="text" id="Number" required />
+      <input type="text" name="text" id="Number" required />
       <br />
-
-      <!-- Email ID Field -->
       <label for="ID">Email ID:</label>
-      <input type="email" id="ID" required />
+      <input type="text" name="text" id="ID" required/>
       <br />
-
-      <!-- Submit Button -->
-      <div id="submit">
-        <input type="submit" value="Submit" />
-      </div>
+        <input type="submit" />
     </form>
 
     <script type="text/javascript" src="./script.js">
