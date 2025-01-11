@@ -1,50 +1,27 @@
 <!DOCTYPE html>
-
 <html>
-
+ 
 <head>
-	<link rel="stylesheet" href="styles.css">
-	 <script>
-         function showAlert() {
-        var FirstName = document.getElementById("FirstName").value;
-        var LastName = document.getElementById("LastName").value;
-        var Number = document.getElementById("Number").value;
-        var ID = document.getElementById("ID").value;
-        alert(
-          "First Name: " +
-            FirstName +
-            " Last Name: " +
-            LastName +
-            " PhoneNumber: " +
-            Number +
-            "Email ID: " +
-            ID
-        );
-      }
-    </script>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
+ 
 <body>
-	<!-- the entire body must be written by student -->
-	<form onsubmit="event.preventDefault(); showAlert();">
-      <label for="FirstName">First Name:</label>
-      <input type="text" name="text" id="FirstName" required />
-      <br />
-      <label for="LastName">Last Name:</label>
-      <input type="text" name="text" id="LastName" required />
-      <br />
-      <label for="Number">Phone Number:</label>
-      <input type="text" name="text" id="Number" required />
-      <br />
-      <label for="ID">Email ID:</label>
-      <input type="text" name="text" id="ID" required/>
-      <br />
-        <input type="submit" />
-    </form>
-
-    <script type="text/javascript" src="./script.js">
-</script>
-
+	<form>
+    <label for="First Name">First Name:</label>
+    <input id="First Name" name="First Name" type="text"><br>
+ 
+    <label for="Last Name">Last Name:</label>
+    <input id="Last Name" name="Last Name" type="text"><br>
+ 
+    <label for="Phone Number">Phone Number:</label>
+    <input id="Phone Number" name="Phone Number" type="number"><br>
+ 
+    <label for="Email ID">Email ID:</label>
+    <input id="Email ID" name="Email ID" type="email"><br>
+ 
+    <button onclick="display()">Submit</button>
+		</form>
+    <script type="text/javascript" src="./script.js"></script>
 </body>
-
+ 
 </html>
